@@ -10,11 +10,11 @@ class CustomersController < ApplicationController
   def create
     @customer = Customer.new(set_customer)
     if @customer.save
-      flash[:notice] = 'Đã tiếp nhận thành công đơn hàng của khách hàng'
+      flash[:notice1] = 'Đã tiếp nhận thành công đơn hàng của khách hàng'
       redirect_to categories_path
     else
-      flash[:notice] = 'Có lỗi! Vui lòng thử lại!'
-      redirect_to @customer
+      flash[:notice2] = 'Có lỗi! Vui lòng thử lại!'
+      redirect_to categories_path
     end
   end
   private
