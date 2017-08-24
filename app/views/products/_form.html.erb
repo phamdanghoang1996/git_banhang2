@@ -1,0 +1,39 @@
+<%= stylesheet_link_tag 'rtable' %>
+<div class="col-md-12">
+  <div class="row">
+    <div class="col-md-5">
+      <h4>Thông tin người nhận: </h4>
+      <%= form_tag @product do |p| %>
+        <%= label_tag('Họ và tên: ') %>
+
+        <%= label_tag('Email: ')%>
+
+        <%= label_tag('Số điện thoại: ')%>
+
+        <%= label_tag('Địa chỉ: ') %>
+
+        <%= label_tag('Số lượng đặt ') %>
+  
+        <%= submit_tag 'Gửi thông tin' %>
+    </div>
+    <div class="col-md-7">
+      <h4>Thông tin sản phẩm: </h4>
+      <div class="rTable">
+				 <div class="rTableRow">
+    			<div class="rTableHead"><strong> Hình ảnh sản phẩm </strong></div>
+    			<div class="rTableHead"><strong> Tên sản phẩm </strong></div>
+    			<div class="rTableHead"><strong> Đơn gía </strong></div>
+				 </div>
+				 <div class="rTableRow">
+  				 <div class="rTableCell"><%= image_tag "/public/images/bongda/sp1.jpg", alt: 'San pham', class: 'img-responsive product' %></div>
+  				 <div class="rTableCell"><p> <%= @products.name %> </p></div>
+  				 <div class="rTableCell"><p id="price" value="<%= @products.price %>"> <%= @products.price %> đồng/chiếc </p></div>
+				 </div>
+			</div>
+      <div class="total">
+        <h4 class="text-right">Thành tiền: <span id="showtotal"></span> </h4>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>

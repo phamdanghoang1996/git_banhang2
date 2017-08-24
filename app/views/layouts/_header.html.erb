@@ -1,0 +1,24 @@
+<div class="container">
+  <nav id="logo">
+    <div class="row">
+      <div class="col-md-2" id='logo'>
+
+      </div>
+      <div class="col-md-6" id='info'>
+        <h4>Uy tín, chất lượng, hợp thời trang</h4>
+        <p>Hoàn tiền 100% - (Nếu phát hiện hàng nhái - hàng kém chất lượng)</p>
+      </div>
+      <div class="col-md-4" id='login'>
+
+      </div>
+    </div>
+
+  </nav>
+  <nav id="headerMenu">
+    <ul>
+      <% @categories.each do |item| %>
+        <li><%= link_to item.name, {controller: 'categories', action: 'show', id: item.id}%> </li>
+      <% end %>
+    </ul>
+  </nav>
+</div>

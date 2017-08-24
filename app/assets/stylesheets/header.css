@@ -1,0 +1,68 @@
+#logo{
+  height: 100px;
+  background: image-url('background.jpg') no-repeat;
+}
+#headerMenu{
+  height: 50px;
+  margin-top: 10px;
+  border-bottom: 2px solid #7D7D7D;
+  background-color: #232F3E;
+}
+#headerMenu ul{
+  list-style: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+#headerMenu ul li{
+  padding-left: 20px;
+  float: left;
+  font-size: 17px;
+
+}
+#headerMenu ul li a{
+  text-decoration: none;
+  color: #DDDDDD;
+  font-weight: bold;
+}
+#headerMenu ul li a:hover{
+  color: #7D7D7D;
+}
+#info {
+  margin-top: 10px;
+}
+#info h4{
+  color: #4C8CF5;
+  font-weight: bold;
+}
+#info p{
+  color: #E84F4B;
+  font-weight: bold;
+}
+#login {
+  margin-top: 10px;
+}
+#filters_product .panel-body {
+  border: 1px solid #232F3E;
+}
+#filters_product .panel-heading{
+  background-color: #232F3E;
+}
+#filters_product p{
+  font-weight: bold;
+  font-size: 17px;
+}
+#filters_product ul{
+  list-style: none;
+  padding-top: 20px;
+}
+#filters_product li{
+  padding-top: 15px;
+}
+#filters_product h4{
+  font-weight: bold;
+  color: #FFFF;
+}
+#filters_product a{
+  text-decoration: none;
+  font-size: 15px;
+}

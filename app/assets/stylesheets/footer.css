@@ -1,0 +1,26 @@
+#footer {
+  margin-top: 20px;
+  background: #232F3E;
+}
+#footer a{
+  color: #7D8385;
+
+}
+#footer h4{
+  color: #E9EBEE;
+  font-weight: bold;
+}
+#footer p{
+  color: #7D8385;
+}
+#footer ul{
+  list-style: none;
+}
+#footer li{
+  color: #7D8385;
+  font-size: 15px;
+}
+#footer a:hover{
+  color: #FFF;
+  font-weight: bold;
+}

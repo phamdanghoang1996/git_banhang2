@@ -1,0 +1,20 @@
+<div class="panel-default">
+  <div class="panel-heading">
+    <h4>Thông tin người nhận: </h4>
+  </div>
+  <div class="panel-body">
+    <%= form_for @customer, url: {action: 'create'} do |cus| %>
+      <%= label_tag('Họ và tên: ') %>
+      <%= cus.text_field :name, class: 'form-control' %>
+      <%= label_tag('Email: ')%>
+      <%= cus.email_field :email, class: 'form-control' %>
+      <%= label_tag('Số điện thoại: ')%>
+      <%= cus.text_field :phonenumber, class:'form-control' %>
+      <%= label_tag('Địa chỉ: ') %>
+      <%= cus.text_field :address, class: 'form-control' %>
+  </div>
+  <div class="panel-footer text-center">
+    <%= cus.submit %>
+    <% end %>
+  </div>
+</div>
