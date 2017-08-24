@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tiệm quần áo Bee</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+<style media="screen">
+  #content {
+    margin-top: 30px;
+  }
+</style>
+  <body>
+    <div class="row">
+        <%= render 'layouts/admin/leftcontent' %>
+        <div class="container-fluid">
+            <div class="side-body">
+                <%= yield %>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

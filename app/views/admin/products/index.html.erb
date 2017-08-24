@@ -1,0 +1,28 @@
+<h3>Danh sach san pham</h3>
+<%= link_to "<button> Thêm sản phẩm</button>".html_safe, new_admin_product_path %>
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Tên </th>
+        <th>Giá</th>
+        <th>Số lượng </th>
+        <th>Thuộc loại</th>
+        <th>Chức năng</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @products.each do |item| %>
+        <tr>
+          <td><%= item.id %></td>
+          <td><%= item.name %></td>
+          <td><%= item.price %></td>
+          <td><%= item.quantity %></td>
+          <td><%= item.category_id %></td>
+          <td><%= button_to 'Xóa' %>
+            <%= link_to "<button> Cập nhật</button>".html_safe, edit_admin_product_path(item) %>
+            <%=link_to 'Xem thông tin sản phẩm' %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
