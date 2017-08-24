@@ -1,0 +1,14 @@
+<h3>Thêm sản phẩm </h3>
+<%= form_for @product, url: {action: 'update'} do |p| %>
+  <%= label_tag('Tên sản phẩm: ') %>
+  <%= p.text_field :name, class: 'form-control' %>
+  <%= label_tag('Giá sản phẩm: ') %>
+  <%= p.number_field :price, class: 'form-control' %>
+  <%= label_tag('Số lượng sản phẩm') %>
+  <%= p.number_field :quantity, class: 'form-control' %>
+  <%= label_tag('Giới thiệu sản phẩm') %>
+  <%= text_area(:product, :introduce, size: "10x10", class: 'form-control') %>
+  <%= label_tag('Thuộc loại loại sản phẩm') %>
+  <%= select("product", "category_id", Category.all.collect {|p| [ p.name, p.id ] } )%>
+  <%= p.submit %>
+<% end %>
